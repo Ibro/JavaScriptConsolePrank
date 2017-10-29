@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <script src="clipboard.min.js"></script>
+    <script src="lib/clipboard.min.js"></script>
+    <link href="lib/noty.css" rel="stylesheet">
+    <script src="lib/noty.min.js" type="text/javascript"></script>
     <script src="index.js"></script>
     <link rel="stylesheet" href="index.css">
 </head>
@@ -13,12 +15,13 @@
     <input type="text" id="message">
     <br/>
     <button class="button" id="btnGetCode">Get me the code</button>
-    <div>
+    <div class="box">
         <code id="code"></code>
     </div>
     <div>
-        <button class="button" style="display: none" id="btnCopyCode"
-                data-clipboard-target="#code">Copy to clipboard</button>
+        <button class="button button-copy" style="display: none" id="btnCopyCode"
+                data-clipboard-target="#code">Copy to clipboard
+        </button>
     </div>
 </div>
 </body>

@@ -5,8 +5,12 @@ document.addEventListener('DOMContentLoaded', function(event) {
   
   
   var clipboard = new Clipboard(buttonCopyCode);
-  clipboard.on('success', function(e) {
-    console.log(e);
+  clipboard.on('success', e => {
+    new Noty({
+      type: 'success',
+      layout: 'topRight',
+      text: 'Copied to clipboard!'
+    }).show();
   });
   clipboard.on('error', function(e) {
     console.log(e);
