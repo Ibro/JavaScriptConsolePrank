@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="clipboard.min.js"></script>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div>
+    <label for="message">Enter the alert message</label>
+    <input type="text" id="message">
+    <br/>
+    <button class="button" id="btnGetCode">Get me the code</button>
+    <div>
+        <code id="code"></code>
+    </div>
+    <div>
+        <button class="button" style="display: none" id="btnCopyCode"
+                data-clipboard-target="#code">Copy to clipboard</button>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+.button {
+    display: inline-block;
+    margin: 0 5px 0 0;
+    padding: 5px 5px;
+    font-size: 14px;
+    line-height: 1.8;
+    appearance: none;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.button:focus {
+    outline: none
+}
+
+input[type=text] {
+    padding:5px;
+    border:2px solid #ccc;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+input[type=text]:focus {
+    border-color:#333;
+}
